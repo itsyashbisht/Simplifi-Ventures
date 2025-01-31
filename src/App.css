@@ -1,0 +1,47 @@
+@import "tailwindcss";
+/* 
+*************COLORS************ 
+
+PRIMARY - 122649
+SECONDARY - 3C73AD
+RED - F7685B
+GREEN - AED47A
+
+BLACK - 192A3E
+TABLE BLACK - 323C47
+BLACK SHADE - 4F4F4F
+
+DARK BLUE TEXT - 334D6E
+GRAY - 90A0B7
+IRON GRAY - C2CFE0
+WHITE -FFFFFF
+
+*************FONTS************ 
+NUNITO SANS
+
+
+*/
+@layer utilities {
+  .right-slant {
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .left-slant {
+    clip-path: polygon(0% 0, 100% 0%, 80% 100%, 0 100%);
+  }
+  .text-gray1 {
+    color: #333;
+  }
+  .text-gray2 {
+    color: #4f4f4f;
+  }
+  .text-Blue {
+    color: #192a3e;
+  }
+  .text-Blue2 {
+    color: #122649;
+  }
+}
+
+body {
+  font-family: "Nunito Sans";
+}
