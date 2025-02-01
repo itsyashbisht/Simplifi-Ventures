@@ -1,4 +1,4 @@
-import RightSlantComponent from "../Layouts/RightSlantComponent";
+import SlantComponent from "../Layouts/SlantComponent";
 import TechnologyIMAGE from "../assets/Technology.png";
 
 const HeaderText = "Technology is in our blood";
@@ -7,10 +7,11 @@ const DescriptiveText =
 
 function Technology() {
   return (
-    <RightSlantComponent
+    <SlantComponent
       Image={TechnologyIMAGE}
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
+      ImageAlignment={"RIGHT"}
     />
   );
 }

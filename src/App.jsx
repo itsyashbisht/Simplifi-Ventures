@@ -1,10 +1,12 @@
+// CUSTOM IMPORTS
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home";
-import AppLayout from "./AppLayout";
 import Team from "./Pages/Team";
+import Home from "./Pages/Home";
 import Studio from "./Pages/Studio";
+import AppLayout from "./AppLayout";
 import Resources from "./Pages/Resources";
 
+// REACT-ROUTING
 const ROUTER = createBrowserRouter([
   {
     // PARENT ROUTE

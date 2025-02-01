@@ -1,3 +1,4 @@
+// CUSTOM IMPORTS
 import SolutionsIMAGE from "../assets/Solutions.png";
 
 function Solutions() {

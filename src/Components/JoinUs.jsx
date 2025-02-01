@@ -1,4 +1,4 @@
-import LeftSlantComponent from "../Layouts/LeftSlantComponent";
+import SlantComponent from "../Layouts/SlantComponent";
 import JoinUsIMAGE from "../assets/JoinUs.png";
 
 const HeaderText = "Join Us";
@@ -7,11 +7,12 @@ const DescriptiveText =
 
 function JoinUs() {
   return (
-    <LeftSlantComponent
+    <SlantComponent
       Image={JoinUsIMAGE}
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
       HeaderTextCenter={true}
+      ImageAlignment={"LEFT"}
     />
   );
 }

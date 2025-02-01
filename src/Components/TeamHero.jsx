@@ -1,4 +1,5 @@
-import RightSlantComponent from "../Layouts/RightSlantComponent";
+// CUTSOM IMPORTS
+import SlantComponent from "../Layouts/SlantComponent";
 import TeamIMAGE from "../assets/Team.png";
 
 const HeaderText = "We build meaningful companies";
@@ -7,10 +8,11 @@ const DescriptiveText =
 
 function TeamHero() {
   return (
-    <RightSlantComponent
+    <SlantComponent
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
       Image={TeamIMAGE}
+      ImageAlignment={"RIGHT"}
     />
   );
 }

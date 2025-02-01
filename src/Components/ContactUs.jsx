@@ -1,4 +1,4 @@
-import RightSlantComponent from "../Layouts/RightSlantComponent";
+import SlantComponent from "../Layouts/SlantComponent";
 import ContactUsIMAGE from "../assets/ContactUs.png";
 
 const HeaderText = "Contact";
@@ -8,12 +8,13 @@ const DescriptiveText =
 
 function ContactUs() {
   return (
-    <RightSlantComponent
+    <SlantComponent
       Image={ContactUsIMAGE}
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
       BottomText={BottomText}
       HeaderTextCenter={true}
+      ImageAlignment={"RIGHT"}
     />
   );
 }

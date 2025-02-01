@@ -22,10 +22,10 @@ NUNITO SANS
 
 */
 @layer utilities {
-  .right-slant {
+  .left-slant {
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
   }
-  .left-slant {
+  .right-slant {
     clip-path: polygon(0% 0, 100% 0%, 80% 100%, 0 100%);
   }
   .text-gray1 {
@@ -39,6 +39,9 @@ NUNITO SANS
   }
   .text-Blue2 {
     color: #122649;
+  }
+  .text-link {
+    color: #3c73ad;
   }
 }
 

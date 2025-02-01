@@ -1,5 +1,5 @@
 import HeroIMAGE from "../assets/Hero.png";
-import RightSlantComponent from "../Layouts/RightSlantComponent";
+import SlantComponent from "../Layouts/SlantComponent";
 
 const HeaderText = "Incubating innovative solutions for financial services";
 const DescriptiveText =
@@ -7,10 +7,11 @@ const DescriptiveText =
 
 function Hero() {
   return (
-    <RightSlantComponent
+    <SlantComponent
       Image={HeroIMAGE}
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
+      ImageAlignment={"RIGHT"}
     />
   );
 }

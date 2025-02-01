@@ -1,4 +1,4 @@
-import LeftSlantComponent from "../Layouts/LeftSlantComponent";
+import SlantComponent from "../Layouts/SlantComponent";
 import AboutIMAGE from "../assets/About.png";
 
 const HeaderText =
@@ -9,10 +9,11 @@ const DescriptiveText =
 
 function About() {
   return (
-    <LeftSlantComponent
+    <SlantComponent
       HeaderText={HeaderText}
       Image={AboutIMAGE}
       DescriptiveText={DescriptiveText}
+      ImageAlignment={"LEFT"}
     />
   );
 }
