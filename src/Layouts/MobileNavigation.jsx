@@ -1,7 +1,8 @@
 // CUSTOM IMPORTS
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { STYLE_MOBILENAV_LINKS } from "../Styles";
 
 export default function MobileNavigation() {
   // STATE
@@ -20,7 +21,7 @@ export default function MobileNavigation() {
       {/* SIDEBAR NAVIGATION */}
       {isOpen && (
         <ul
-          className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${
+          className={`fixed h-full flex py-64 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${
             isOpen ? "translate-x-0" : "translate-x-100 "
           } transition-transform duration-300 ease-in-out `}
         >
@@ -30,17 +31,25 @@ export default function MobileNavigation() {
           >
             <X size={32} />
           </span>
-          <li className="text-gray1 font-semibold text-4xl">
-            <Link to="/">Home</Link>
+          <li>
+            <NavLink className={STYLE_MOBILENAV_LINKS} to="/">
+              Home
+            </NavLink>
           </li>
-          <li className="text-gray1 font-semibold text-4xl">
-            <Link to="/team">Team</Link>
+          <li>
+            <NavLink className={STYLE_MOBILENAV_LINKS} to="/team">
+              Team
+            </NavLink>
           </li>
-          <li className="text-gray1 font-semibold text-4xl">
-            <Link to="/studio">Studio</Link>
+          <li>
+            <NavLink className={STYLE_MOBILENAV_LINKS} to="/studio">
+              Studio
+            </NavLink>
           </li>
-          <li className="text-gray1 font-semibold text-4xl">
-            <Link to="/resources">Resources</Link>
+          <li>
+            <NavLink className={STYLE_MOBILENAV_LINKS} to="/resources">
+              Resources
+            </NavLink>
           </li>
         </ul>
       )}

@@ -46,6 +46,9 @@ NUNITO SANS
   .text-link {
     color: #3c73ad;
   }
+  .activeLINK :active {
+    color: #3c73ad;
+  }
 }
 
 body {

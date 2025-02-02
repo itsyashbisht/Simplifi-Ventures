@@ -1,10 +1,11 @@
 // CUSTOM IMPORTS
-import CapitalIMAGE from "../assets/Capital.png";
-import AdvisorIMAGE from "../assets/Advisor.png";
-import AcceleratorIMAGE from "../assets/Accelerator.png";
-import ApproachCard from "./ApproachCard";
-import OurProcess from "./OurProcess";
 import { STYLE_HEADERTEXT } from "../Styles";
+
+import OurProcess from "./OurProcess";
+import ApproachCard from "./ApproachCard";
+import AdvisorIMAGE from "../assets/Advisor.png";
+import CapitalIMAGE from "../assets/Capital.png";
+import AcceleratorIMAGE from "../assets/Accelerator.png";
 
 const CARD_DETAILS = [
   {
@@ -30,10 +31,12 @@ const CARD_DETAILS = [
 function Approach() {
   return (
     <section className="md:min-h-screen md:px-32 mt-4 md:pt-16">
-      <p className={`mb-5 md:ms-10 md:mb-12 ${STYLE_HEADERTEXT}`}>
+      <p
+        className={`mb-5 md:ms-10 text-center md:text-left md:mb-12 ${STYLE_HEADERTEXT}`}
+      >
         Our Approach
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 grid-rows-1 mx-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 grid-rows-1 mx-10">
         {CARD_DETAILS.map((CARD) => (
           <ApproachCard
             HeadText={CARD.HEADTEXT}

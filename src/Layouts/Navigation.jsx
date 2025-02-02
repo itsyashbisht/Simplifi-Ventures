@@ -1,5 +1,6 @@
 // CUSTOM IMPORTS
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { STYLE_NAVLINKS } from "../Styles";
 
 function Navigation() {
   return (
@@ -11,19 +12,19 @@ function Navigation() {
       </ul>
       <ul className="flex top-11 md:left-[260px] lg:left-1/3 fixed md:gap-x-6 lg:gap-x-12">
         <li>
-          <Link to="/team" className="text-sm text-Blue2 font-semibold">
+          <NavLink to="/team" className={STYLE_NAVLINKS}>
             Team
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/studio" className="text-sm text-Blue2 font-semibold">
+          <NavLink to="/studio" className={STYLE_NAVLINKS}>
             Studio
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/resources" className="text-sm text-Blue2 font-semibold">
+          <NavLink to="/resources" className={STYLE_NAVLINKS}>
             Resources
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
