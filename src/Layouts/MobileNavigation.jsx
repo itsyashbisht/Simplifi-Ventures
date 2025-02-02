@@ -21,7 +21,7 @@ export default function MobileNavigation() {
       {/* SIDEBAR NAVIGATION */}
       {isOpen && (
         <ul
-          className={`fixed h-full flex py-64 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${
+          className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${
             isOpen ? "translate-x-0" : "translate-x-100 "
           } transition-transform duration-300 ease-in-out `}
         >

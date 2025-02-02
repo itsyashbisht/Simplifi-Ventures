@@ -54,7 +54,7 @@ function Partner() {
             touch!
           </p>
         </div>
-        <div className="grid md:grid-cols-5 grid-cols-3">
+        <div className="grid md:grid-cols-5 grid-cols-2">
           {PARTNERS.map((PARTNER) => (
             <PartnerCard
               PartnerIMAGE={PARTNER.IMAGE}

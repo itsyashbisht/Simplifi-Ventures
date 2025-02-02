@@ -5,7 +5,7 @@ import ProcessIMAGE from "../assets/Vector.png";
 function OurProcess() {
   return (
     <section className="md:min-h-screen py-10 md:py-16">
-      <p className={`mb-5 md:ms-10 md:mb-14 ${STYLE_HEADERTEXT}`}>
+      <p className={`mb-5 md:ms-10 md:mb-14 text-center ${STYLE_HEADERTEXT}`}>
         Our Process
       </p>
       <div className="flex justify-center">
