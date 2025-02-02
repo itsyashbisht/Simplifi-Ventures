@@ -36,22 +36,22 @@ const PARTNERS = [
 
 function Partner() {
   return (
-    <section className="min-h-screen w-full">
-      <div className="grid grid-rows-2 px-48 h-screen py-48 gap-y-20">
-        <div className="grid grid-cols-[1fr_4fr] items-center">
+    <section className="md:min-h-screen w-full">
+      <div className="grid md:grid-rows-2 md:px-48 md:h-screen py-5 sm:py-20 md:py-48 md:gap-y-20 sm:gap-y-8 gap-y-3">
+        <div className="grid grid-rows-2 md:grid-cols-[1fr_4fr] md:row-start-1 row-start-2 items-center">
           <PartnerCard
             PartnerIMAGE={Parnter1Image}
             POSITION={"Partner"}
             PartnerNAME={"Ori Sasson"}
           />
-          <p className="text-2xl text-gray1 font-semibold">
+          <p className="text-base px-3 md:px-0 text-center md:text-left sm:text-xl md:col-start-2 row-start-2 md:text-2xl text-gray1 font-semibold">
             We love ideas. We spend our time thinking about problems and how we
             can solve them, so we’d love to hear from you. If you’re interested
             in fintech innovation and want to talk about it with us, get in
             touch!
           </p>
         </div>
-        <div className="grid grid-cols-5">
+        <div className="grid md:grid-cols-5 grid-cols-3">
           {PARTNERS.map((PARTNER) => (
             <PartnerCard
               PartnerIMAGE={PARTNER.IMAGE}

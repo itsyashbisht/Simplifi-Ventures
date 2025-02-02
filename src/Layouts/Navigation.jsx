@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav className="flex w-1/2 px-2 sm:px-4 md:px-8 lg:px-12 ">
+    <nav className="md:flex w-1/2 hidden px-2 sm:px-4 md:px-8 lg:px-12 ">
       <ul className="absolute top-10 md:left-10 lg:left-20">
         <li className="text-gray1 md:text-xl lg:text-2xl font-bold">
           <Link to="/">Simplifi Ventures</Link>

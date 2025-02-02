@@ -6,12 +6,14 @@ import Innovations from "../Components/Innovations";
 import JoinUs from "../Components/JoinUs";
 import Learning from "../Components/Learning";
 import StudioHero from "../Components/StudioHero";
+import MobileNavigation from "../Layouts/MobileNavigation";
 import Navigation from "../Layouts/Navigation";
 
 function Studio() {
   return (
     <div>
       <Navigation />
+      <MobileNavigation />
       <StudioHero />
       <Innovations />
       <Company />

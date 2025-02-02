@@ -6,10 +6,12 @@ import Navigation from "../Layouts/Navigation";
 import ContactUs from "../Components/ContactUs";
 import Solutions from "../Components/Solutions";
 import Technology from "../Components/Technology";
+import MobileNavigation from "../Layouts/MobileNavigation";
 
 function Home() {
   return (
-    <div className="min-w-full">
+    <div className="min-w-full relative">
+      <MobileNavigation />
       <Navigation />
       <Hero />
       <About />

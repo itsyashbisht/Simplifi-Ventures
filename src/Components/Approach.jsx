@@ -2,8 +2,8 @@ import CapitalIMAGE from "../assets/Capital.png";
 import AdvisorIMAGE from "../assets/Advisor.png";
 import AcceleratorIMAGE from "../assets/Accelerator.png";
 import ApproachCard from "./ApproachCard";
-import { STYLE_DISCRIPTIVETEXT, STYLE_HEADERTEXT } from "../Styles";
 import OurProcess from "./OurProcess";
+import { STYLE_HEADERTEXT } from "../Styles";
 
 const CARD_DETAILS = [
   {
@@ -28,8 +28,10 @@ const CARD_DETAILS = [
 
 function Approach() {
   return (
-    <section className="min-h-screen px-32 pt-16">
-      <p className={`ms-10 mb-12 ${STYLE_HEADERTEXT}`}>Our Approach</p>
+    <section className="md:min-h-screen md:px-32 mt-4 md:pt-16">
+      <p className={`mb-5 md:ms-10 md:mb-12 ${STYLE_HEADERTEXT}`}>
+        Our Approach
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 grid-rows-1 mx-10 ">
         {CARD_DETAILS.map((CARD) => (
           <ApproachCard
