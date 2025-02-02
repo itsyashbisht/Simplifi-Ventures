@@ -7,7 +7,7 @@ import ContactUs from "../Components/ContactUs";
 
 function Team() {
   return (
-    <div className="min-h-screen">
+    <div>
       <Navigation />
       <TeamHero />
       <Partner />

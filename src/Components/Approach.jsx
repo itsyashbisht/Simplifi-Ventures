@@ -30,7 +30,7 @@ function Approach() {
   return (
     <section className="min-h-screen px-32 pt-16">
       <p className={`ms-10 mb-12 ${STYLE_HEADERTEXT}`}>Our Approach</p>
-      <div className="grid grid-cols-3 gap-2 grid-rows-1 mx-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 grid-rows-1 mx-10 ">
         {CARD_DETAILS.map((CARD) => (
           <ApproachCard
             HeadText={CARD.HEADTEXT}
