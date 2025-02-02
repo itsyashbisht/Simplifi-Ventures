@@ -5,6 +5,7 @@ import Navigation from "../Layouts/Navigation";
 import ContactUs from "../Components/ContactUs";
 import ResourceHero from "../Components/ResourceHero";
 import MobileNavigation from "../Layouts/MobileNavigation";
+import MobileFooter from "../Layouts/MobileFooter";
 
 function Resources() {
   return (
@@ -15,6 +16,7 @@ function Resources() {
       <News />
       <JoinUs />
       <ContactUs />
+      <MobileFooter />
     </div>
   );
 }

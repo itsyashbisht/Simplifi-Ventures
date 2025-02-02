@@ -2,7 +2,6 @@
 const truncateWORDS = (Text, wordsLimit) => {
   let words = Text.split(" ");
   if (words.length > wordsLimit) {
-    console.log(words);
     return words.slice(0, wordsLimit).join(" ") + "...";
   }
   return Text;

@@ -11,6 +11,7 @@ function Technology() {
       Image={TechnologyIMAGE}
       HeaderText={HeaderText}
       DescriptiveText={DescriptiveText}
+      HeaderTextCenter={false}
       ImageAlignment={"RIGHT"}
     />
   );

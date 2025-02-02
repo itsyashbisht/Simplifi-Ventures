@@ -1,18 +1,23 @@
+// CUSTOM IMPORTS
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function MobileNavigation() {
+  // STATE
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
+      {/* HEADER WITH HAMBURGER-MENU BUTTON */}
       <nav className="w-full md:hidden h-16 items-center px-5 flex justify-between">
         <p className="text-gray1 text-2xl font-bold">Simplifi Ventures</p>
         <span className="text-gray1" onClick={() => setIsOpen(!isOpen)}>
           <Menu size={28} />
         </span>
       </nav>
+
+      {/* SIDEBAR NAVIGATION */}
       {isOpen && (
         <ul
           className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${

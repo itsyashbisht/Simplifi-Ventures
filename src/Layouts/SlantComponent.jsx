@@ -1,10 +1,10 @@
+// CUSTOM IMPORTS
 import { STYLE_DISCRIPTIVETEXT, STYLE_HEADERTEXT } from "../Styles";
 
 function SlantComponent({
   HeaderText,
   DescriptiveText,
   Image,
-  ImageURL,
   BottomText,
   HeaderTextCenter,
   ImageAlignment,
@@ -27,14 +27,18 @@ function SlantComponent({
 
       {/* TEXT CONTENT */}
       <div
-        className={`flex flex-col justify-center sm:row-start-2 px-4 sm:px-8 md:px-8 lg:px-20 ${
+        className={`flex flex-col justify-center sm:items-center sm:row-start-2 px-4 sm:px-8 md:px-8 lg:px-20 ${
           ImageAlignment === "LEFT"
             ? "md:col-start-2 md:row-start-1"
             : "md:col-start-1 md:row-start-1"
         }`}
       >
         <p
-          className={`${STYLE_HEADERTEXT} ${HeaderTextCenter && "text-center"}`}
+          className={`${STYLE_HEADERTEXT} text-center sm:text-center ${
+            HeaderTextCenter
+              ? "md:text-center lg:text-center"
+              : "md:text-left lg:text-left"
+          }`}
         >
           {HeaderText}
         </p>

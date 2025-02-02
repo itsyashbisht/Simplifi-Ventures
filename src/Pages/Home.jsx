@@ -7,6 +7,7 @@ import ContactUs from "../Components/ContactUs";
 import Solutions from "../Components/Solutions";
 import Technology from "../Components/Technology";
 import MobileNavigation from "../Layouts/MobileNavigation";
+import MobileFooter from "../Layouts/MobileFooter";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Solutions />
       <JoinUs />
       <ContactUs />
+      <MobileFooter />
     </div>
   );
 }

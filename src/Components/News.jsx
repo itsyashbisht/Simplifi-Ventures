@@ -1,5 +1,4 @@
 // CUSTOM IMPORTS
-import { STYLE_HEADERTEXT } from "../Styles";
 import NewsIMAGE1 from "../assets/News1.png";
 import NewsIMAGE2 from "../assets/News2.png";
 import NewsIMAGE3 from "../assets/News3.png";
@@ -34,13 +33,24 @@ const NEWS_ARR = [
     NEWSHEADING: "News Incubator Launched in Vietnam",
     NEWSDATE: "11th Jan 2020",
   },
+  {
+    IMAGE: NewsIMAGE3,
+    NEWSTEXT:
+      "We have launched our 2020 Fintech Field Survey to understand the key challenges facing financial institutions today as they think about their digital transformation strategy. Our focus this year is on community",
+    NEWSHEADING: "Field Survey",
+    NEWSDATE: "11th Jan 2020",
+  },
 ];
 
 function News() {
   return (
     <section className="md:min-h-screen ps-5 md:ps-32 py-6 md:py-10 bg-[#F3F3F3]">
-      <p className={`mb-5 md:mb-12  ${STYLE_HEADERTEXT}`}>News</p>
-      <div className="grid  grid-rows-1 overflow-x-scroll gap-x-8 grid-flow-col">
+      <p
+        className={`mb-5 md:mb-12 font-semibold text-2xl text-center md:text-left md:text-2xl lg:text-4xl lg:mb-6 text-gray1`}
+      >
+        News
+      </p>
+      <div className="grid  grid-rows-1 overflow-x-scroll gap-x-3 md:gap-x-8 grid-flow-col">
         {NEWS_ARR.map((NEWS, INDEX) => (
           <NewsCard
             NewsHeadingWordLimit={3}
