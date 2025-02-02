@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import HeroIMAGE from "../assets/Studio.png";
+import HeroIMAGE from "../assets/Studio.webp";
 
 const HeaderText =
   "At Simplifi Ventures we believe in delivering value for our entrepreneurs and financial partners";

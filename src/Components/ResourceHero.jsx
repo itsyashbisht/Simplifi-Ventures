@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import ResourcesIMAGE from "../assets/Resources.png";
+import ResourcesIMAGE from "../assets/Resources.webp";
 
 const HeaderText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet feugiat eros,  accumsan e";

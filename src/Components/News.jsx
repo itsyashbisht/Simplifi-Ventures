@@ -1,7 +1,7 @@
 // CUSTOM IMPORTS
-import NewsIMAGE1 from "../assets/News1.png";
-import NewsIMAGE2 from "../assets/News2.png";
-import NewsIMAGE3 from "../assets/News3.png";
+import NewsIMAGE1 from "../assets/News1.webp";
+import NewsIMAGE2 from "../assets/News2.webp";
+import NewsIMAGE3 from "../assets/News3.webp";
 import NewsCard from "./NewsCard";
 
 const NEWS_ARR = [

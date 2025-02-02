@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import ContactUsIMAGE from "../assets/ContactUs.png";
+import ContactUsIMAGE from "../assets/ContactUs.webp";
 
 const HeaderText = "Contact";
 const BottomText = "Learnmore@simplifiventures.com";

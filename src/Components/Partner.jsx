@@ -1,11 +1,11 @@
 // CUSTOM IMPORTS
 import PartnerCard from "./PartnerCard";
-import Parnter1Image from "../assets/Picture1.png";
-import Parnter2Image from "../assets/Picture2.png";
-import Parnter3Image from "../assets/Picture3.png";
-import Parnter4Image from "../assets/Picture4.png";
-import Parnter5Image from "../assets/Picture5.png";
-import Parnter6Image from "../assets/Picture6.png";
+import Parnter1Image from "../assets/Picture1.webp";
+import Parnter2Image from "../assets/Picture2.webp";
+import Parnter3Image from "../assets/Picture3.webp";
+import Parnter4Image from "../assets/Picture4.webp";
+import Parnter5Image from "../assets/Picture5.webp";
+import Parnter6Image from "../assets/Picture6.webp";
 
 const PARTNERS = [
   {

@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import TechnologyIMAGE from "../assets/Technology.png";
+import TechnologyIMAGE from "../assets/Technology.webp";
 
 const HeaderText = "Technology is in our blood";
 const DescriptiveText =

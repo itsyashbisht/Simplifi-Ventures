@@ -1,5 +1,5 @@
 // CUSTOM IMPORTS
-import HeroIMAGE from "../assets/Hero.png";
+import HeroIMAGE from "../assets/Hero.webp";
 import SlantComponent from "../Layouts/SlantComponent";
 
 const HeaderText = "Incubating innovative solutions for financial services";

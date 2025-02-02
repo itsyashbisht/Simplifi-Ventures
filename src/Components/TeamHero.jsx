@@ -1,6 +1,6 @@
 // CUTSOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import TeamIMAGE from "../assets/Team.png";
+import TeamIMAGE from "../assets/Team.webp";
 
 const HeaderText = "We build meaningful companies";
 const DescriptiveText =

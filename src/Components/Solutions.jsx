@@ -1,5 +1,5 @@
 // CUSTOM IMPORTS
-import SolutionsIMAGE from "../assets/Solutions.png";
+import SolutionsIMAGE from "../assets/Solutions.webp";
 
 function Solutions() {
   return (

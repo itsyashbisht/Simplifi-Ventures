@@ -3,9 +3,9 @@ import { STYLE_HEADERTEXT } from "../Styles";
 
 import OurProcess from "./OurProcess";
 import ApproachCard from "./ApproachCard";
-import AdvisorIMAGE from "../assets/Advisor.png";
-import CapitalIMAGE from "../assets/Capital.png";
-import AcceleratorIMAGE from "../assets/Accelerator.png";
+import AdvisorIMAGE from "../assets/Advisor.webp";
+import CapitalIMAGE from "../assets/Capital.webp";
+import AcceleratorIMAGE from "../assets/Accelerator.webp";
 
 const CARD_DETAILS = [
   {

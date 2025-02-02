@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import { STYLE_HEADERTEXT } from "../Styles";
-import ProcessIMAGE from "../assets/Vector.png";
+import ProcessIMAGE from "../assets/Vector.webp";
 
 function OurProcess() {
   return (

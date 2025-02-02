@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import CompanyIMAGE from "../assets/Love.png";
+import CompanyIMAGE from "../assets/Love.webp";
 
 const HeaderText = "Tough Love";
 const DescriptiveText =

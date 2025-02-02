@@ -7,7 +7,7 @@ import JoinUs from "../Components/JoinUs";
 import Learning from "../Components/Learning";
 import StudioHero from "../Components/StudioHero";
 import MobileFooter from "../Layouts/MobileFooter";
-import MobileNavigation from "../Layouts/MobileNavigation";
+
 import Navigation from "../Layouts/Navigation";
 
 function Studio() {

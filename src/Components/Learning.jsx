@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
-import LearningIMAGE from "../assets/Learning.png";
+import LearningIMAGE from "../assets/Learning.webp";
 
 const HeaderText = "Leap Frog Learning";
 const DescriptiveText =
