@@ -1,7 +1,6 @@
 @import "tailwindcss";
 /* 
 *************COLORS************ 
-
 PRIMARY - 122649
 SECONDARY - 3C73AD
 RED - F7685B
@@ -18,9 +17,9 @@ WHITE -FFFFFF
 
 *************FONTS************ 
 NUNITO SANS
-
-
 */
+
+/* UTILITY CLASSES ADDED */
 @layer utilities {
   @media (min-width: 768px) {
     .left-slant {
@@ -31,6 +30,7 @@ NUNITO SANS
     }
   }
 
+  /* TEXT COLORS  */
   .text-gray1 {
     color: #333;
   }

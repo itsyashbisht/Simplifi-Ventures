@@ -1,3 +1,4 @@
+// CUSTOM IMPORTS
 import HeroIMAGE from "../assets/Hero.png";
 import SlantComponent from "../Layouts/SlantComponent";
 

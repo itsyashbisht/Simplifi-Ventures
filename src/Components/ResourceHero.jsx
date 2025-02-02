@@ -1,3 +1,4 @@
+// CUSTOM IMPORTS
 import SlantComponent from "../Layouts/SlantComponent";
 import ResourcesIMAGE from "../assets/Resources.png";
 

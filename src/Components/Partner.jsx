@@ -1,3 +1,4 @@
+// CUSTOM IMPORTS
 import PartnerCard from "./PartnerCard";
 import Parnter1Image from "../assets/Picture1.png";
 import Parnter2Image from "../assets/Picture2.png";

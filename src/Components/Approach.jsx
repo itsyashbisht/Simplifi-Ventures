@@ -1,3 +1,4 @@
+// CUSTOM IMPORTS
 import CapitalIMAGE from "../assets/Capital.png";
 import AdvisorIMAGE from "../assets/Advisor.png";
 import AcceleratorIMAGE from "../assets/Accelerator.png";
