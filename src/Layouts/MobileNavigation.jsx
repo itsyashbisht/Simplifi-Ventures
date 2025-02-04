@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { STYLE_MOBILENAV_LINKS } from "../Styles";
+import { motion } from "framer-motion";
 
 export default function MobileNavigation() {
   // STATE
@@ -20,10 +21,11 @@ export default function MobileNavigation() {
 
       {/* SIDEBAR NAVIGATION */}
       {isOpen && (
-        <ul
-          className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white opacity-90 z-50 transform ${
-            isOpen ? "translate-x-0" : "translate-x-100 "
-          } transition-transform duration-300 ease-in-out `}
+        <motion.ul
+          initial={{ x: 800, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.9 }}
+          transition={{ duration: 0.3 }}
+          className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white  z-50`}
         >
           <span
             className=" absolute top-5 right-5"
@@ -31,27 +33,27 @@ export default function MobileNavigation() {
           >
             <X size={32} />
           </span>
-          <li>
+          <motion.li whileHover={{ scale: 1.2 }}>
             <NavLink className={STYLE_MOBILENAV_LINKS} to="/">
               Home
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{ scale: 1.2 }}>
             <NavLink className={STYLE_MOBILENAV_LINKS} to="/team">
               Team
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{ scale: 1.2 }}>
             <NavLink className={STYLE_MOBILENAV_LINKS} to="/studio">
               Studio
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{ scale: 1.2 }}>
             <NavLink className={STYLE_MOBILENAV_LINKS} to="/resources">
               Resources
             </NavLink>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       )}
     </div>
   );
