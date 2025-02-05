@@ -1,6 +1,6 @@
 // CUSTOM IMPORTS
 import { STYLE_DISCRIPTIVETEXT, STYLE_HEADERTEXT } from "../Styles";
-import { motion, useScroll } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 function SlantComponent({
   // PROPS.
@@ -12,19 +12,22 @@ function SlantComponent({
   ImageAlignment,
 }) {
   return (
-    <section className="grid md:grid-rows-1  grid-rows-[300px_250px] grid-cols-1 md:min-h-screen w-full md:grid-cols-2">
+    <section className="grid md:grid-rows-1 grid-rows-[300px_250px] grid-cols-1 md:min-h-screen w-full md:grid-cols-2">
       {/* IMAGE SECTION */}
       <div
         className={`relative w-full md:min-h-screen sm:row-start-1 ${
           ImageAlignment === "LEFT" ? "md:col-start-1" : "md:col-start-2"
         }`}
       >
-        <div
-          className={` bg-no-repeat  md:bg-cover bg-cover bg-center  absolute w-full h-full inset-0  ${
+        <motion.div
+          initial={{ x: "0px", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeIn" }}
+          className={`bg-no-repeat md:bg-cover bg-cover bg-center absolute w-full h-full inset-0 ${
             ImageAlignment === "LEFT" ? "right-slant" : "left-slant"
           }`}
           style={{ backgroundImage: `URL(${Image})` }}
-        ></div>
+        ></motion.div>
       </div>
 
       {/* TEXT CONTENT */}
@@ -36,9 +39,10 @@ function SlantComponent({
         }`}
       >
         <motion.p
-          initial={{ y: 50, opacity: 0 }}
+          // SCROLL ANIMATION
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           className={`${STYLE_HEADERTEXT} text-center sm:text-center ${
             HeaderTextCenter
               ? "md:text-center lg:text-center"
@@ -48,9 +52,10 @@ function SlantComponent({
           {HeaderText}
         </motion.p>
         <motion.p
+          // SCROLL ANIMATION
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.1 }}
+          transition={{ duration: 0.6 }}
           className={STYLE_DISCRIPTIVETEXT}
         >
           {DescriptiveText}

@@ -6,13 +6,10 @@ import Navigation from "../Layouts/Navigation";
 import ContactUs from "../Components/ContactUs";
 import Solutions from "../Components/Solutions";
 import Technology from "../Components/Technology";
-import MobileNavigation from "../Layouts/MobileNavigation";
-import MobileFooter from "../Layouts/MobileFooter";
 
 function Home() {
   return (
     <div className="min-w-full relative">
-      <MobileNavigation />
       <Navigation />
       <Hero />
       <About />
@@ -20,7 +17,6 @@ function Home() {
       <Solutions />
       <JoinUs />
       <ContactUs />
-      <MobileFooter />
     </div>
   );
 }

@@ -8,6 +8,7 @@ function Solutions() {
       <div className="mt-0 md:mt-12 w-[930px] flex flex-col-reverse md:block mx-4.5 md:mx-12">
         <div className="my-3 md:my-0">
           <motion.p
+            // SCROLL ANIMATION
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
@@ -16,6 +17,7 @@ function Solutions() {
             We spun out of Primera Capital in 2020
           </motion.p>
           <motion.p
+            // SCROLL ANIMATION
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
@@ -28,6 +30,7 @@ function Solutions() {
         </div>
         <div className="flex flex-col items-center ">
           <motion.div
+            // SCROLL ANIMATION
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
