@@ -22,9 +22,9 @@ export default function MobileNavigation() {
       {/* SIDEBAR NAVIGATION */}
       {isOpen && (
         <motion.ul
-          initial={{ x: 800, opacity: 0 }}
+          initial={{ x: "100%", opacity: 0 }}
           animate={{ x: 0, opacity: 0.9 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4 }}
           className={`fixed h-full flex py-48 flex-col shadow-lg items-center justify-evenly top-0 left-0 w-full bg-white  z-50`}
         >
           <span
@@ -34,22 +34,38 @@ export default function MobileNavigation() {
             <X size={32} />
           </span>
           <motion.li whileHover={{ scale: 1.2 }}>
-            <NavLink className={STYLE_MOBILENAV_LINKS} to="/">
+            <NavLink
+              className={STYLE_MOBILENAV_LINKS}
+              to="/"
+              onClick={() => setIsOpen(false)}
+            >
               Home
             </NavLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }}>
-            <NavLink className={STYLE_MOBILENAV_LINKS} to="/team">
+            <NavLink
+              className={STYLE_MOBILENAV_LINKS}
+              to="/team"
+              onClick={() => setIsOpen(false)}
+            >
               Team
             </NavLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }}>
-            <NavLink className={STYLE_MOBILENAV_LINKS} to="/studio">
+            <NavLink
+              className={STYLE_MOBILENAV_LINKS}
+              to="/studio"
+              onClick={() => setIsOpen(false)}
+            >
               Studio
             </NavLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }}>
-            <NavLink className={STYLE_MOBILENAV_LINKS} to="/resources">
+            <NavLink
+              className={STYLE_MOBILENAV_LINKS}
+              to="/resources"
+              onClick={() => setIsOpen(false)}
+            >
               Resources
             </NavLink>
           </motion.li>
